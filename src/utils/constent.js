@@ -1,17 +1,16 @@
-export const GOOGLE_API_KEY = "AIzaSyApIAF3YVOtAlZsDGiMQo6xJq_aGVgHgH4";
 export const YOUTUBE_VIDEOS_API =
   "https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&maxResults=50&chart=mostPopular&regionCode=IN&key=" +
-  GOOGLE_API_KEY;
+  process.env.REACT_APP_GOOGLE_API_KEY;
 
 export const YOUTUBE_SEARCH_SUGGESTION_API =
   "http://suggestqueries.google.com/complete/search?client=firefox&ds=yt&q=";
 
 export const YOUTUBE_POPULAR_VIDEO_SUGGESTION_API =
   "https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&maxResults=10&regionCode=IN&key=" +
-  GOOGLE_API_KEY;
+  process.env.REACT_APP_GOOGLE_API_KEY;
 export const YOUTUBE_COMMENT_API =
   "https://www.googleapis.com/youtube/v3/commentThreads?part=snippet&&key=" +
-  GOOGLE_API_KEY;
+  process.env.REACT_APP_GOOGLE_API_KEY;
 
 export const sideBarContent = [
   [
@@ -94,4 +93,4 @@ export const sideBarContent = [
 ];
 export const YOUTUBE_SEARCH_RESULT_API =
   "https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=25&type=video&key=" +
-  GOOGLE_API_KEY;
+  process.env.REACT_APP_GOOGLE_API_KEY;
